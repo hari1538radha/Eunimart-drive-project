@@ -6,13 +6,13 @@ const Navbar = () => {
       <p className="text-xl font-bold pl-11">Eunimart-project</p>
       <div className="flex gap-x-8 mr-20 font-medium text-xl ">
         <div className="hover:underline">
-          <a>Login</a>
+          <a href="/">Login</a>
         </div>
         <div className="hover:underline">
-          <a>Home</a>
+          <a href="/Home">Home</a>
         </div>
         <div className="hover:underline">
-          <a>DetailPage</a>
+          <a href="#">DetailPage</a>
         </div>
       </div>
     </div>
