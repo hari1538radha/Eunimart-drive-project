@@ -6,7 +6,7 @@ import { Route, Routes } from "react-router-dom";
 function App() {
   return (
     <div className="">
-      <Navbar/>
+      <Navbar />
       <Routes>
         <Route path="/" element={<LoginPage />} exact></Route>
         <Route path="/Home" element={<HomePage />}></Route>
