@@ -5,7 +5,6 @@ import { UserDetails } from "../Store/Slice/UserDetails";
 import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
-  
   const [data, setData] = useState();
   const Navigate = useNavigate();
   const dispatch = useDispatch();
@@ -16,7 +15,6 @@ const HomePage = () => {
     dispatch(UserDetails());
     setData(UserData);
     console.log(data);
-    
   }, []);
 
   const handleDetailpage = (e) => {
@@ -29,7 +27,6 @@ const HomePage = () => {
 
   return (
     <div>
-      {/* <Navbar /> */}
       <div>
         {
           <div className="flex flex-wrap items-center justify-center">
@@ -48,8 +45,12 @@ const HomePage = () => {
                       ></img>
                     </div>
                     <div id={obj.id} className="flex flex-col ml-10">
-                      <p className="font-medium text-xl" id={obj.id}>UserID:&nbsp;<span> {obj.id}</span></p>
-                      <p className="font-medium text-xl" id={obj.id}>Email:&nbsp;{obj.email}</p>
+                      <p className="font-medium text-xl" id={obj.id}>
+                        UserID:&nbsp;<span> {obj.id}</span>
+                      </p>
+                      <p className="font-medium text-xl" id={obj.id}>
+                        Email:&nbsp;{obj.email}
+                      </p>
                       <p className="font-medium text-xl" id={obj.id}>
                         UserName:&nbsp;{obj.first_name} &nbsp;{obj.last_name}
                       </p>

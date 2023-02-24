@@ -6,8 +6,8 @@ import { Route, Routes } from "react-router-dom";
 
 function App() {
   const getuserName = localStorage.getItem("userName");
-const getMobilenumber = localStorage.getItem("Mobilenumber");
-const getEmail = localStorage.getItem("Email");
+  const getMobilenumber = localStorage.getItem("Mobilenumber");
+  const getEmail = localStorage.getItem("Email");
 
   return (
     <div>
