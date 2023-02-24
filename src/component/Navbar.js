@@ -1,6 +1,9 @@
 import React from "react";
 
 const Navbar = () => {
+  const getuserName = localStorage.getItem("userName");
+  const getMobilenumber = localStorage.getItem("Mobilenumber");
+  const getEmail = localStorage.getItem("Email");
   const handelLogin = () => {
     localStorage.clear();
     window.location.reload();
@@ -10,9 +13,13 @@ const Navbar = () => {
       <p className="text-xl font-bold pl-11">Eunimart-project</p>
       <div className="flex gap-x-8 mr-20 font-medium text-xl ">
         <div className="hover:underline">
-          <a onClick={handelLogin} href="/">
-            Login
-          </a>
+          {getuserName && getMobilenumber && getEmail ? (
+            <a onClick={handelLogin} href="/">
+              Logout
+            </a>
+          ) : (
+            <a></a>
+          )}
         </div>
         <div className="hover:underline">
           <a href="/Home">Home</a>
