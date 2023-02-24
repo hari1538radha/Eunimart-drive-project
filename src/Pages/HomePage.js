@@ -39,7 +39,7 @@ const HomePage = () => {
                     className=" mt-7 ml-14  flex flex-wrap items-center w-[500px] bg-neutral-100 h-[172px]"
                   >
                     <div id={obj.id}>
-                      <img className="w-32 ml-4 h-32" src={obj.avatar}></img>
+                      <img id={obj.id} className="w-32 ml-4 h-32" src={obj.avatar}></img>
                     </div>
                     <div id={obj.id} className="flex flex-col ml-10">
                       <p id={obj.id}>UserId: {obj.id}</p>
