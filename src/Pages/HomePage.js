@@ -5,6 +5,7 @@ import { UserDetails } from "../Store/Slice/UserDetails";
 import { useNavigate } from "react-router-dom";
 
 const HomePage = () => {
+  
   const [data, setData] = useState();
   const Navigate = useNavigate();
   const dispatch = useDispatch();
@@ -15,6 +16,7 @@ const HomePage = () => {
     dispatch(UserDetails());
     setData(UserData);
     console.log(data);
+    
   }, []);
 
   const handleDetailpage = (e) => {
