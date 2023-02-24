@@ -3,11 +3,12 @@ import HomePage from "./Pages/HomePage";
 import Detailpage from "./Pages/Detailpage";
 import Navbar from "./component/Navbar";
 import { Route, Routes } from "react-router-dom";
-const getuserName = localStorage.getItem("userName");
+
+function App() {
+  const getuserName = localStorage.getItem("userName");
 const getMobilenumber = localStorage.getItem("Mobilenumber");
 const getEmail = localStorage.getItem("Email");
 
-function App() {
   return (
     <div>
       <div className="">

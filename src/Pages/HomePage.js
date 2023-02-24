@@ -38,20 +38,20 @@ const HomePage = () => {
                 <div id={obj.id} onClick={handleDetailpage}>
                   <div
                     id={obj.id}
-                    className=" mt-7 ml-14  flex flex-wrap items-center w-[500px] bg-neutral-100 h-[172px]"
+                    className=" mt-7 ml-14 hover:scale-105 duration-300 flex flex-wrap items-center w-[500px] bg-neutral-100 h-[172px]"
                   >
                     <div id={obj.id}>
                       <img
                         id={obj.id}
-                        className="w-32 ml-4 h-32"
+                        className="w-32 hover:scale-105 duration-300 ml-4 h-32"
                         src={obj.avatar}
                       ></img>
                     </div>
                     <div id={obj.id} className="flex flex-col ml-10">
-                      <p id={obj.id}>UserId: {obj.id}</p>
-                      <p id={obj.id}>{obj.email}</p>
-                      <p id={obj.id}>
-                        {obj.first_name} &nbsp;{obj.last_name}
+                      <p className="font-medium text-xl" id={obj.id}>UserID:&nbsp;<span> {obj.id}</span></p>
+                      <p className="font-medium text-xl" id={obj.id}>Email:&nbsp;{obj.email}</p>
+                      <p className="font-medium text-xl" id={obj.id}>
+                        UserName:&nbsp;{obj.first_name} &nbsp;{obj.last_name}
                       </p>
                     </div>
                   </div>
